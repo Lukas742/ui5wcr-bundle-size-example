@@ -13,6 +13,7 @@ import "./json-imports/i18n.js"; //ui5wcr assets
 ```
 
 Different bundle sizes with different assets:
+
 _If not stated otherwise, the BarcodeScannerDialog was not imported_
 
 - all assets: 13M
