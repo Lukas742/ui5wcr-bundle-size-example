@@ -1,44 +1,22 @@
-# UI5 Web Components for React - Vite + TypeScript Template
+This app implements a component from the `@ui5/webcomponents`, `@ui5/webcomponents-fiori` and the `@ui5/webcomponents-react` package per default.
 
-## How to use this template
+1. `npm i`
+2. `npm run build`
 
-```bash
-npx degit SAP/ui5-webcomponents-react/templates/vite-ts#main my-project
-cd my-project
+When importing Assets from the `@ui5/webcomponents-react` (`import '@ui5/webcomponents-react/dist/Assets.js';`) package, the following Assets are added:
+
+```ts
+import "@ui5/webcomponents/dist/Assets.js"; //ui5wc assets
+import "@ui5/webcomponents-fiori/dist/Assets.js"; //ui5wc-fiori assets
+import "./json-imports/i18n-fetch.js"; //ui5wcr assets
+import "./json-imports/i18n.js"; //ui5wcr assets
 ```
 
-## Getting Started
+Different bundle sizes with different assets:
+_If not stated otherwise, the BarcodeScannerDialog was not imported_
 
-First, install the `node_modules`:
-
-```bash
-npm install
-```
-
-Then, run the development server:
-
-```bash
-npm run dev
-```
-
-## Run Tests
-
-Run all component tests headlessly in Chrome:
-
-```bash
-npm run test
-```
-
-Open component tests in Chrome:
-
-```bash
-npm run test:open
-```
-
-## Learn More
-
-To learn more about Vite and UI5 Web Components for React, please visit the following resources:
-
-- [Vite Documentation](https://vitejs.dev/)
-- [UI5 Web Components Documentation](https://sap.github.io/ui5-webcomponents/)
-- [UI5 Web Components for React Documentation](https://sap.github.io/ui5-webcomponents-react/)
+- all assets: 13M
+- all assets + BarCodeScannerDialog component: 14M
+- no assets: 724K
+- without fiori assets: 12M
+- only ui5wcr assets: 1.6M
