@@ -1,5 +1,5 @@
 import {
-  BarcodeScannerDialog,
+  // BarcodeScannerDialog,
   Button,
   FlexBox,
   ShellBar,
@@ -16,7 +16,7 @@ function App() {
         <span>FlexBox</span>
       </FlexBox>
       {/*  zxing component*/}
-      <BarcodeScannerDialog />
+      {/*<BarcodeScannerDialog />*/}
     </>
   );
 }
