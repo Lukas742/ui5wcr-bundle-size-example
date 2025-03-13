@@ -12,7 +12,7 @@ import "./json-imports/i18n-fetch.js"; //ui5wcr assets
 import "./json-imports/i18n.js"; //ui5wcr assets
 ```
 
-Different bundle sizes with different assets:
+Different bundle sizes with different assets (bundled via `tsc && vite build`):
 
 _If not stated otherwise, the BarcodeScannerDialog was not imported_
 
